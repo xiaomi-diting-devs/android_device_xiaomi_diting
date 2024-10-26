@@ -20,10 +20,6 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             "${PATCHELF_0_17_2}" --set-soname "libalNN_snpe.so" "${2}"
             ;;
-        vendor/lib64/hw/audio.primary.taro-diting.so)
-            [ "$2" = "" ] && return 0
-            "${PATCHELF_0_17_2}" --set-soname "audio.primary.taro-diting.so" "${2}"
-            ;;
         vendor/lib64/hw/fingerprint.goodix_fod.default.so)
             [ "$2" = "" ] && return 0
             "${PATCHELF_0_17_2}" --set-soname "fingerprint.goodix_fod.default.so" "${2}"
@@ -31,10 +27,6 @@ function blob_fixup() {
         vendor/lib64/libcamximageformatutils.so)
             [ "$2" = "" ] && return 0
             "${PATCHELF_0_17_2}" --replace-needed "vendor.qti.hardware.display.config-V2-ndk_platform.so" "vendor.qti.hardware.display.config-V2-ndk.so" "${2}"
-            ;;
-        vendor/lib64/libkaraokepal.so)
-            [ "$2" = "" ] && return 0
-            "${PATCHELF_0_17_2}" --replace-needed "audio.primary.taro.so" "audio.primary.taro-diting.so" "${2}"
             ;;
         *)
             return 1
