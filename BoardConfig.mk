@@ -16,7 +16,6 @@ DEVICE_PATH := device/xiaomi/diting
 device_second_stage_modules := \
     fts_touch_spi.ko \
     goodix_fod.ko \
-    goodix_core.ko \
     wl2866d.ko \
     qcom-hv-haptics.ko
 
