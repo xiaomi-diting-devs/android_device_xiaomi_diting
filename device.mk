@@ -33,6 +33,13 @@ PRODUCT_PACKAGES += \
     WifiResDiting \
     WifiResDitingCN
 
+# SKU specific RROs
+PRODUCT_PACKAGES += \
+    Settings22081212C \
+    Settings22081212R \
+    Settings22081212UG \
+    SettingsA201XM
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
